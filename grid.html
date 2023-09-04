@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="text">
+        <h1 class="text1">Logo</h1>
+      </div>
+      <div class="display">
+        <p>Home</p>
+        <p>About</p>
+        <p>Services</p>
+        <p>Contact</p>
+        <div class="login">
+          <p>Login</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .flex-container {
+    background-color: purple;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font: 400;
+    font-size: 400;
+    font-weight: 800;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 5rem;
+  }
+  .display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 6rem;
+  }
+  .login {
+    background-color: white;
+    height: 2rem;
+    width: 4rem;
+    align-items: center;
+    display: flex;
+    border-radius: 0.4rem;
+    justify-content: center;
+    color: aqua;
+  }
+</style>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facebook.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      src = "https://kit.fontawesome.com/a076d05399.js";
+      crossorigin = "anonymous";
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+      }
+      body {
+        background: #18191a;
+      font-family:"Roboto",sans-serif;
+      }
+      .navbar {
+        width: 100vw;
+        height: 08vh;
+        padding: 0 2rem;
+        background-color: #242526;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .fa {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.8rem;
+        color: rgba(255, 255, 255, 0.769);
+        align-self: center;
+      }
+      .icon {
+        display: flex;
+        gap: 0.6rem;
+        color: #adb0b5;
+
+        height: 100%;
+
+        font-size: 24px;
+      }
+      .pp {
+        height: 2.5vw;
+        align-items: centre;
+      }
+      .icon11 {
+        display: flex;
+        gap: 1rem;
+        color: white;
+        font-size: 22px;
+        margin-left: -11rem;
+      }
+      .icon11:hover {
+        cursor: pointer;
+      }
+      .facebook {
+        display: flex;
+        border-radius: 1.8rem;
+        background-color: #0c87ef;
+        height: 3rem;
+        width: 3rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        align-self: center;
+        padding-right: rem;
+      }
+      .icon22 {
+        align-items: center;
+        justify-content: center;
+        background-color: #3a3b3c;
+        border-radius: 100%;
+        width: 2.5vw;
+        height: 2.5vw;
+        align-self: center;
+        padding: 0.4rem 0.4rem;
+      }
+      .icon div {
+        padding: 0 2.5rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        border-radius: 1rem;
+        cursor: pointer;
+      }
+      .icon div:hover {
+        background: #3a3b43;
+      }
+      .home {
+        border-bottom: solid 0.2rem #2374e1;
+        border-radius: 0 !important;
+      }
+      .home:hover {
+        background: transparent !important;
+      }
+
+      .main {
+        display: flex;
+      }
+
+      .side-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        color: white;
+        height: 100vh;
+        width: 20%;
+        /* margin-top: 2rem; */
+        margin-left: 0.2rem;
+        font-size: 30px;
+        transition: 0.3seconds;
+        cursor: pointer;
+      }
+      .side-bar .item {
+        display: flex;
+        align-items: center;
+      }
+      .fa {
+        width: 2rem;
+      }
+      .letter {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0.8rem;
+        
+      }
+
+      .item {
+        cursor: pointer;
+        margin-top: 0.15rem;
+
+        width: 22rem;
+        border-radius: 0.5rem;
+        height: 50%;
+        padding: 0.8rem;
+        display: flex;
+      }
+      .item:hover {
+        background: #3a3b43;
+      }
+      .item div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        border-radius: 0.4rem;
+        cursor: pointer;
+      }
+
+      .line {
+        width: 18rem;
+        opacity: 0.2;
+        margin-left: 0.5rem;
+        margin-top: 0.4rem;
+      }
+      .shortcut {
+        
+        font-size: 18px;
+        opacity: 70%;
+        display: flex;
+        margin-left: 0.5rem;
+        margin-top: 0.8rem;
+      }
+      .vdo {
+        display: flex;
+        margin-left: 1.2rem;
+      }
+      .stline {
+        width: 30rem;
+        margin-left: 23.2rem;
+        font-weight: bolder;
+        flex-direction: column;
+        display: flex;
+      }
+      .middlepage {
+        width: 38%;
+        margin: 1.2rem auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+      }
+      .reels {
+        background-color: #242526;
+        border-radius: 0.8rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+      .top {
+        display: flex;
+      }
+      .reels:hover {
+        background-color: #222324;
+      }
+      .news {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        transition: 1sec;
+        margin-top: 0.3rem;
+
+        padding: 10px 40px;
+
+        width: 17rem;
+        gap: 1rem;
+      }
+      .news:hover {
+        background-color: #2c2c2d;
+        border-radius: 0.5rem;
+        cursor: pointer;
+
+        border-bottom: solid 0.2rem #2374e1;
+        border-radius: 0 !important;
+      }
+      .letter7 {
+        color: rgb(172, 165, 165);
+      }
+
+      .stories {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        overflow-y: scroll;
+      }
+      .stories img {
+        height: 12rem;
+      }
+      .stories::-webkit-scrollbar {
+        height: 0;
+      }
+      .stories:hover {
+        background: transparent !important;
+      }
+      .linee {
+        width: 18rem;
+        opacity: 0.2;
+        margin-left: 0.5rem;
+        margin-top: 0.4rem;
+      }
+      .linee {
+        align-items: center;
+        justify-content: center;
+      }
+      .news1111 {
+        display: flex;
+        border-bottom: solid 0.2rem #2374e1;
+      }
+      .news1111:hover {
+        background: transparent;
+      }
+
+      .stories1 {
+        border-radius: 0.75rem;
+      }
+      .status-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        background-color: #242526;
+        height: 8rem;
+      }
+      .status {
+        display: flex;
+        gap: 1rem;
+      }
+      .status img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 100%;
+      }
+      .status input {
+        width: 100%;
+        border-radius: 5rem;
+        padding: 0 1rem;
+        background-color: #3a3b3c;
+        border: 0;
+      }
+
+      .right-sidebar {
+        width: 20%;
+      }
+      .line11 {
+        color: #222324;
+        margin-top: 0.7rem;
+        opacity: 10%;
+      }
+      .main-mind {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 0.5rem;
+      }
+      .mind:hover {
+        background-color: #3a3b3c;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+      .mind {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        height: 100%;
+        width: 100%;
+      }
+      .lastone {
+        background-color: #2c2c2d;
+        height: 39vh;
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      .rightbar {
+        display: flex;
+
+        color: white;
+        height: 100%;
+        width: 25%;
+        flex-direction: column;
+        gap:0.4rem;
+      }
+      .sponsor {
+        display: flex;
+        color: #cacaca;
+        margin-top: 1.4rem;                            
+        font-size: larger;
+
+      }
+      .smallimage{
+        width: 35%;
+        border-radius: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        gap:0.2rem;
+      }
+      .middleone{
+        display: flex;
+       align-items: center;
+       gap: 1rem;
+       padding: 0.5rem;
+       border-radius: 0.5rem;
+      }
+      .middleone:hover{
+        background-color: #3a3b3c;  
+
+      }
+      .wide{
+        padding: 0.6rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+       
+        display: flex;
+        flex-direction: column;
+       
+      }
+      .line9{
+        opacity: 20%;
+        margin-top: 0.2rem;
+      }
+      
+        
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="facebook">
+        <i class="fa">&#xf082;</i>
+      </div>
+
+      <div class="icon">
+        <div class="home">
+          <i class="fa">&#xf015;</i>
+        </div>
+        <div>
+          <i class="fa">&#xf03d;</i>
+        </div>
+        <div>
+          <i class="fa">&#xf0c0;</i>
+        </div>
+        <div>
+          <i class="fa">&#xf11b;</i>
+        </div>
+      </div>
+
+      <div class="icon11">
+        <div class="icon22">
+          <i class="fa">&#xf278;</i>
+        </div>
+        <div class="icon22">
+          <i class="fa">&#xf1d8;</i>
+        </div>
+        <div class="icon22">
+          <i class="fa">&#xf0f3;</i>
+        </div>
+
+        <img src="user.png" class="pp" />
+      </div>
+    </div>
+    <div class="main">
+      <div class="side-bar">
+        <div class="item">
+          <i class="fa">&#xf288;</i>
+          <div class="letter">
+            <p>Prajw AL</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="fa">&#xf09a;</i>
+          <div class="letter">
+            <p>Friends</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa">&#xf200;</i>
+          <div class="letter">
+            <p>Memories</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="fa">&#xf265;</i>
+          <div class="letter">
+            <p>Saved</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="fa">&#xf1a0;</i>
+          <div class="letter">
+            <p>Groups</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="fa">&#xf194;</i>
+          <div class="letter">
+            <p>Video</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="fa">&#xf19c;</i>
+          <div class="letter">
+            <p>Marketplace</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="fa">&#xf249;</i>
+          <div class="letter">
+            <p>Feeds</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i
+            style="
+              background-color: #3a3b3c;
+              border-radius: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 2rem;
+            "
+            class="fa"
+            >&#xf0d7;</i
+          >
+          <div class="letter">
+            <p>See more</p>
+          </div>
+        </div>
+        <hr / class="line">
+        <p class="shortcut">Your Shortcut</p>
+
+        <div class="item">
+          <i class="fa">&#xf1c8;</i>
+          <div class="letter">
+            <p>Programming Code</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <i class="fa">&#xf096;</i>
+          <div class="letter">
+            <p>Ludo Club</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- section middle page -->
+
+      <div class="middlepage">
+        <div class="reels">
+          <div class="top">
+            <div class="news">
+              <i style="font-size: 24px" class="fa">&#xf247;</i>
+              <p class="letter7">Stories</p>
+            </div>
+
+            <div class="news news1111">
+              <i style="font-size: 24px" class="fa">&#xf03d;</i>
+              <p class="letter7">Reels</p>
+            </div>
+          </div>
+
+          <!-- <section stories> -->
+          <div class="stories">
+            <img src="images.jfif" class="stories1" />
+            <img src="images.jfif" class="stories1" />
+            <img src="images.jfif" class="stories1" />
+            <img src="images.jfif" class="stories1" />
+            <img src="images.jfif" class="stories1" />
+            <img src="images.jfif" class="stories1" />
+          </div>
+        </div>
+        <div class="status-box">
+          <div class="status">
+            <img src="03-Viewers-1.webp" />
+            <input type="text" placeholder="Whats's on your mind,Prajw?" />
+          </div>
+          <hr / class=" line11">
+
+          <div class="main-mind">
+            <div class="mind">
+              <i style="font-size: 24px" class="fa">&#xf03d;</i>
+              <p class="letter7">Live Video</p>
+            </div>
+            <div class="mind">
+              <i style="font-size: 24px" class="fa">&#xf03e;</i>
+              <p class="letter7">Photo/video</p>
+            </div>
+            <div class="mind">
+              <i style="font-size: 24px" class="fa">&#xf284;</i>
+              <p class="letter7">Activity</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lastone">
+          <div>
+            <p>CLass</p>
+          </div>
+        </div>
+      </div>
+      <div class="rightbar">
+        <div class="sponsor">Sponsored</div>
+          <div class="wide">
+            <div class="middleone">
+              <img src="small.png"class=smallimage >
+              <p  class="godaddy">Open up with GoDaddy</p>
+            </div>
+            <div class="middleone">
+              <img src="adv.jpg" class="smallimage">
+              <p class="godaddy">Pte class</p>
+
+            </div>
+            <hr class="line9">
+            <div class="wide">
+              Birthdays
+            </div>
+
+        </div>
+      
+      <div class="right-sidebar"></div>
+    </div>
+  </body>
+</html>
